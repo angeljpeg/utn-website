@@ -1,7 +1,9 @@
+import { Navbar } from "@/components/root";
+
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <div>Navbar website</div>
+      <Navbar />
       <main>{children}</main>
       <div>footer website</div>
     </>

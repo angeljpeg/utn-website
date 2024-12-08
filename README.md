@@ -5,7 +5,10 @@
 First, run the development server:
 
 ```bash
-npm run dev
+git clone https://github.com/angeljpeg/utn-website.git # Clonar Repositorio
+cd  utn-website # Moverse a la carpeta del proyecto
+npm install # Instalacion de Dependencias
+npm run dev # Ejecutar el Proyecto
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

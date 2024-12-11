@@ -17,9 +17,9 @@ export default function Page() {
 
       {/* OBJETIVO */}
       <Objetivo />
-      Map
-      {/* NOTICIAS */}
 
+      {/* NOTICIAS */}
+      
 
       {/* NUMERALIA */}
       <Numeralia />

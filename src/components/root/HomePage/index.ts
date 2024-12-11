@@ -1,0 +1,5 @@
+export {HeroSection} from "@/components/root/HomePage/HeroSection"
+export {Ventajas} from "@/components/root/HomePage/Ventajas"
+export {Objetivo} from "@/components/root/HomePage/Objetivo"
+export {Numeralia} from "@/components/root/HomePage/Numeralia"
+export {Map} from "@/components/root/HomePage/Map"

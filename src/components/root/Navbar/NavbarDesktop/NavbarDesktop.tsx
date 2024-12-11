@@ -20,7 +20,7 @@ export default function NavbarDesktop() {
 
   return (
     <div
-      className={`min-w-full h-14 ${headerBgClass} items-center gap-2 justify-between px-10 hidden md:flex shadow-lg duration-300`}
+      className={`min-w-full h-14 ${headerBgClass} items-center gap-6 justify-between px-10 hidden md:flex shadow-lg duration-300`}
     >
       <div>
         <Image
@@ -42,10 +42,6 @@ export default function NavbarDesktop() {
           </li>
         ))}
       </ul>
-
-      <div className="bg-green-400 px-4 py-2 rounded-full font-bold">
-        Llamanos
-      </div>
     </div>
   );
 }

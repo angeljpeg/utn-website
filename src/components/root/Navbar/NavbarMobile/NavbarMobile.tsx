@@ -1,12 +1,12 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-
 import Image from "next/image";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 export default function NavbarMobile() {
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setScrollPosition(window.scrollY);
@@ -16,35 +16,70 @@ export default function NavbarMobile() {
   }, []);
 
   const headerBgClass =
-    scrollPosition < 250 ? "text-white bg-transparent" : "bg-white text-black";
+    scrollPosition < 250
+      ? "text-white bg-transparent"
+      : "bg-white text-black shadow-md";
+
   return (
     <div
-      className={`min-w-full h-14 ${headerBgClass} flex items-center gap-4 justify-between px-4 sm:px-6 md:px-10 md:hidden shadow-lg duration-300`}
+      className={`fixed top-0 left-0 z-20 w-full gap-4 h-14 ${headerBgClass} md:hidden flex items-center justify-between px-4 sm:px-6 md:px-10 transition duration-300`}
     >
       {/* Botón de menú */}
       <button
         aria-label="Abrir menú"
-        className="flex items-center justify-center p-2 rounded-full "
+        aria-expanded={isOpen}
+        className="z-30 mb-6 w-7 md:mx-6 mx-4"
+        onClick={() => setIsOpen(!isOpen)}
       >
-        <Menu size={36} className="text-white" />
+        <div className="relative">
+          <Menu
+            size={28}
+            className={`absolute transform transition-all duration-300 ${
+              isOpen
+                ? "rotate-180 opacity-0 text-black"
+                : "rotate-0 opacity-100 text-white"
+            }`}
+          />
+          <X
+            size={28}
+            className={`absolute transform transition-all duration-300 ${
+              isOpen
+                ? "rotate-0 opacity-100 text-black"
+                : "-rotate-180 opacity-0 text-white"
+            }`}
+          />
+        </div>
       </button>
 
       {/* Logo */}
       <Image
         src="/utn.svg"
         alt="Logo de la Universidad Tecnológica de Nogales (UTN)"
-        height={96}
-        width={96}
-        className="max-w-24 w-20"
+        height={80}
+        width={80}
+        className="mx-4"
       />
 
-      {/* Botón de llamada */}
-      <a
-        href="tel:+1234567890"
-        className="bg-green-400 px-4 py-2 rounded-full font-bold text-white hover:bg-green-500 transition duration-300 focus:ring focus:ring-green-300"
+      {/* Menú desplegable */}
+
+      <div
+        className={`fixed inset-0 bg-black/50 transition-opacity duration-300 ${
+          isOpen
+            ? "opacity-100 pointer-events-auto"
+            : "opacity-0 pointer-events-none"
+        }`}
+        aria-hidden={!isOpen}
+      />
+      <div
+        className={`fixed inset-0 transform transition-transform duration-300 ease-in-out ${
+          isOpen ? "translate-x-0" : "-translate-x-full z-10"
+        }`}
+        aria-hidden={!isOpen}
       >
-        Llámanos
-      </a>
+        <div className="bg-red-50 w-3/4 h-screen py-16 px-8">
+          <ul></ul>
+        </div>
+      </div>
     </div>
   );
 }

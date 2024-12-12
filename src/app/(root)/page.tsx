@@ -4,6 +4,7 @@ import {
   Objetivo,
   Numeralia,
   Map,
+  Noticias,
 } from "@/components/root/HomePage";
 
 export default function Page() {
@@ -15,11 +16,11 @@ export default function Page() {
       {/* VENTAJAS */}
       <Ventajas />
 
+      {/* NOTICIAS */}
+      <Noticias />
+      
       {/* OBJETIVO */}
       <Objetivo />
-
-      {/* NOTICIAS */}
-      
 
       {/* NUMERALIA */}
       <Numeralia />

@@ -18,7 +18,7 @@ export default function Page() {
 
       {/* NOTICIAS */}
       <Noticias />
-      
+
       {/* OBJETIVO */}
       <Objetivo />
 

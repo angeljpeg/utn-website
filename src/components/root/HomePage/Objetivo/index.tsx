@@ -5,19 +5,19 @@ export function Objetivo() {
   return (
     <section>
       <div
-        className="relative w-full bg-fixed bg-center bg-cover py-28 h-auto"
+        className="relative w-full bg-fixed bg-center bg-cover py-28 h-auto aspect-video md:aspect-auto"
         style={{ backgroundImage: `url(/fondo-utn-2.webp)` }}
       >
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-emerald-950/60 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-emerald-900/80 to-transparent"></div>
 
         {/* Content */}
-        <div className="relative z-10 flex flex-col items-center justify-center px-6">
+        <div className="relative z-10 flex flex-col items-center justify-center px-4 sm:px-10">
           {/* Texto */}
-          <div className="text-center max-w-3xl">
-            <p className="px-4 py-2 text-xl font-light text-center text-white rounded-md lg:text-2xl md:text-2xl">
+          <div className="text-center max-w-screen-md">
+            <p className="px-4 py-2 text-lg md:text-2xl font-light text-center text-white rounded-md animate-fadeIn">
               &quot;El objetivo de esta dependencia es{" "}
-              <span className="font-semibold text-white">
+              <span className="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-green-600">
                 formar profesionistas competitivos con conocimientos,
                 habilidades y valores,
               </span>{" "}
@@ -28,13 +28,13 @@ export function Objetivo() {
           </div>
 
           {/* Logo */}
-          <div className="mt-8">
+          <div className="mt-10 animate-fadeIn delay-500">
             <Image
               src="/utn-blanco.svg"
               alt="UTN logo"
               height={92}
               width={92}
-              className="animate-fadeIn delay-300"
+              className="opacity-80 hover:opacity-100 transition-opacity duration-300"
             />
           </div>
         </div>

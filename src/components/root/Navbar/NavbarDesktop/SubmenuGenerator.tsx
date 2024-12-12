@@ -10,21 +10,26 @@ interface props {
 
 export default function SubmenuGenerator({ menu }: props) {
   if (!menu.subMenu && menu.link) {
-    return <Menu link={menu.link} title={menu.title} />;
+    return (
+      <Menu
+        link={menu.link}
+        title={menu.title}
+      />
+    );
   }
   return (
-    <ul className="flex gap-x-1 items-center relative">
-      {/* Contenedor para el menú y el hover */}
-      <div className="group relative">
-        <span className="flex items-center cursor-default">
-          {menu.title} <ChevronDown />
-        </span>
-        {/* Submenú */}
-        {menu.subMenu && (
-          <Submenu subMenu={menu.subMenu} />
-        )}
-      </div>
-    </ul>
+    <div className="relative">
+      {/* Contenedor para menú principal */}
+      <span
+        className="flex items-center gap-1 cursor-pointer hover:text-green-600 focus:outline-none"
+        aria-expanded="false"
+        aria-haspopup="true"
+      >
+        {menu.title} <ChevronDown />
+      </span>
+      {/* Submenú */}
+      {menu.subMenu && <Submenu subMenu={menu.subMenu} />}
+    </div>
   );
 }
 

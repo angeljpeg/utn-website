@@ -2,6 +2,7 @@
     "conventionalCommits.scopes": [
         "Project",
         "website",
-        "home page"
+        "home page",
+        "map"
     ]
 }

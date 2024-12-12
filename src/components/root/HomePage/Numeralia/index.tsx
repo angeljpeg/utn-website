@@ -15,7 +15,7 @@ export function Numeralia() {
           </p>
 
           {/* Tarjetas */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-20">
             {[
               {
                 title: "Oferta educativa",

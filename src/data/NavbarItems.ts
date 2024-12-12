@@ -76,7 +76,7 @@ export const NavbarItems: NavbarItem[] = [
     {
       title: "SERVICIOS",
       subMenu: [
-        { title: "EDUC. CONTINUA", link: "/edu-continua" },
+        { title: "EDUC. CONTINUA", link: "/educacion-continua" },
         { title: "BOLSA DE TRABAJO", link: "/bolsa-trabajo" },
         { title: "CERTIFICACIONES", link: "/certificaciones" },
         { title: "EMPRENDEDORES", link: "/emprendedores" },

@@ -20,7 +20,7 @@ export default function NavbarDesktop() {
 
   return (
     <div
-      className={`min-w-full h-16 ${headerBgClass} items-center gap-6 justify-between hidden md:flex md:px-10 lg:px-16 shadow-lg duration-300`}
+      className={`min-w-full h-16 ${headerBgClass} items-center gap-6 justify-between hidden md:flex md:px-10 lg:px-20 shadow-lg duration-300`}
     >
       {/* Logo */}
       <div className="flex">

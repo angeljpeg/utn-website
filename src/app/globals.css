@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.text-home-title {
+  /* TEXT */
+  @apply bg-clip-text text-transparent;
+
+  /* TEXT COLOR */
+  @apply bg-gradient-to-r from-lime-500 via-green-500 to-green-800 tracking-tight;
+
+  /* BACKGROUND */
+  @apply bg-clip-text text-transparent bg-[length:300%_300%];
+
+  /* ANIMATION */
+  @apply animate-animated-gradient;
+}

@@ -6,7 +6,7 @@ export function Ventajas() {
     <section className="w-full h-auto bg-gradient-to-b from-gray-200 to-white py-16">
       <div className="container mx-auto flex flex-col items-center justify-center px-4 sm:px-10 lg:px-20 max-w-screen-xl">
         {/* Título */}
-        <h3 className="text-4xl md:text-6xl font-extrabold mb-3 text-center bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-green-600 tracking-tight">
+        <h3 className="text-home-title text-4xl md:text-6xl font-extrabold mb-3 text-center">
           ¿Por qué Nosotros?
         </h3>
         <p className="text-lg md:text-xl text-gray-600 text-center max-w-3xl mb-8">

@@ -6,7 +6,7 @@ export function Map() {
     <section className="bg-gradient-to-b from-gray-200 to-white py-16">
       <div className="container mx-auto flex flex-col items-center justify-center px-4 sm:px-10 lg:px-20 max-w-screen-xl">
         {/* Título */}
-        <h4 className="text-4xl md:text-5xl font-extrabold mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-green-600 tracking-tight">
+        <h4 className="text-4xl md:text-5xl font-extrabold mb-6 text-center text-home-title">
           Encuéntranos
         </h4>
         <p className="text-lg md:text-xl text-gray-600 text-center max-w-2xl mb-10">

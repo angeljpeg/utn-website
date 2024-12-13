@@ -14,7 +14,20 @@ export default {
       },
       fontFamily: {
         poppins: ["var(--font-poppins)"]
-      }
+      },
+      animation: {
+        "animated-gradient": "gradient-move 5s infinite alternate",
+      },
+      keyframes: {
+        "gradient-move": {
+          "0%": {
+            backgroundPosition: "0% 0%",
+          },
+          "100%": {
+            backgroundPosition: "100% 100%",
+          },
+        },
+      },
     },
   },
   plugins: [],

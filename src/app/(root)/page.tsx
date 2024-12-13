@@ -5,6 +5,7 @@ import {
   Numeralia,
   Map,
   Noticias,
+  Footer,
 } from "@/components/root/HomePage";
 
 export default function Page() {
@@ -27,6 +28,8 @@ export default function Page() {
 
       {/* GOOGLE MAPS */}
       <Map />
+
+      <Footer />
     </section>
   );
 }

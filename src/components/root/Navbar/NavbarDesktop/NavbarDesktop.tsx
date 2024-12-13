@@ -6,9 +6,12 @@ import { NavbarItems } from "@/data/NavbarItems";
 import { useEffect, useState } from "react";
 
 export default function NavbarDesktop() {
-  const [scrollPosition, setScrollPosition] = useState(0);
+  const [scrollPosition, setScrollPosition] = useState(0); // Estado inicial correcto
 
   useEffect(() => {
+    // Solo se ejecuta en el cliente
+    setScrollPosition(window.scrollY);
+
     const handleScroll = () => setScrollPosition(window.scrollY);
     window.addEventListener("scroll", handleScroll);
 
@@ -16,7 +19,9 @@ export default function NavbarDesktop() {
   }, []);
 
   const headerBgClass =
-    scrollPosition < 250 ? "text-white bg-transparent" : "bg-white text-gray-700";
+    scrollPosition < 250
+      ? "text-white bg-transparent"
+      : "bg-white text-black shadow-md";
 
   return (
     <div

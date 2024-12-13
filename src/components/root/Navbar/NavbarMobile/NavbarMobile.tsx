@@ -5,10 +5,13 @@ import Image from "next/image";
 import { Menu, X } from "lucide-react";
 
 export default function NavbarMobile() {
-  const [scrollPosition, setScrollPosition] = useState(() => window.scrollY); // Estado inicial correcto
+  const [scrollPosition, setScrollPosition] = useState(0); // Estado inicial correcto
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
+    // Solo se ejecuta en el cliente
+    setScrollPosition(window.scrollY);
+
     const handleScroll = () => setScrollPosition(window.scrollY);
     window.addEventListener("scroll", handleScroll);
 

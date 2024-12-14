@@ -1,6 +1,7 @@
 "use client";
 import { useEffect } from "react";
 import { UseHeader } from "@/lib/stores/header";
+import NuevoModelo from "@/components/root/CarrerasPage/NuevoModelo";
 
 export default function Carreras() {
   const setHeader = UseHeader((state) => state.setHeader);
@@ -11,7 +12,7 @@ export default function Carreras() {
 
   return (
     <section className="w-full">
-     
+     <NuevoModelo />
     </section>
   );
 }

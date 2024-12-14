@@ -39,7 +39,7 @@ export default function NavbarDesktop() {
       </div>
 
       {/* Menú principal */}
-      <ul className="flex flex-wrap items-center gap-x-6 font-semibold text-base">
+      <ul className="flex flex-wrap items-center gap-x-6 font-semibold text-sm">
         {NavbarItems.map((item, idx) => (
           <li
             key={`${item.title}-${idx}`}

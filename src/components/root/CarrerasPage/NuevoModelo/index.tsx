@@ -33,11 +33,11 @@ export default function NuevoModelo() {
       {carreras.length > 0 ? (
         carreras.map((item, index) => (
           <div
-            className="rounded-md p-5 bg-gradient-to-b from-stone-100 to-white hover:scale-110 hover:shadow-lg duration-150"
+            className="rounded-md p-5 bg-gradient-to-b from-stone-100 to-white hover:scale-110 hover:shadow-2xl duration-300 "
             key={index}
           >
             <div className="flex flex-col items-center justify-center gap-y-5 cursor-default">
-              <div className="rounded-full bg-green-300/80 p-4 text-green-500">
+              <div className="rounded-full animate-animated-gradient bg-gradient-to-tl from-green-300/50 via-green-500/50 to-green-700/50 p-4 text-green-500 bg-[length:300%_300%]">
                 <Icon name={item.icon} size={42} color="currentColor" />
               </div>
               <div className="flex flex-col gap-y-3">

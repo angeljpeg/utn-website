@@ -15,3 +15,7 @@
   /* ANIMATION */
   @apply animate-animated-gradient;
 }
+
+::selection {
+  @apply bg-green-200 text-green-600;
+}

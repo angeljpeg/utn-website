@@ -14,9 +14,9 @@ export function Map() {
           oficinas y visítanos para obtener más información.
         </p>
 
-        <div className="flex flex-col md:flex-row gap-10 w-full items-center justify-center">
+        <div className="flex flex-col md:flex-row gap-10 w-full items-center justify-center overflow-hidden px-4 sm:px-10">
           {/* Información adicional */}
-          <div className="flex flex-col items-start gap-8 max-w-sm">
+          <div className="flex flex-col items-start gap-8 max-w-full md:max-w-md">
             {[
               {
                 icon: <MapPin size={32} className="shrink-0" />,
@@ -40,11 +40,10 @@ export function Map() {
                 className="flex items-center gap-4 text-green-500 p-4 w-full"
               >
                 {icon}
-                <p className="text-lg text-gray-800">{text}</p>
+                <p className="text-base sm:text-lg text-gray-800 text-balance break-words">{text}</p>
               </div>
             ))}
           </div>
-
           {/* Contenedor del mapa */}
           <div className="w-full md:w-2/3 h-auto aspect-video bg-gray-100 rounded-lg shadow-md overflow-hidden">
             <iframe

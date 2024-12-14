@@ -14,6 +14,9 @@ export default function Page() {
       {/* HERO SECTION */}
       <HeroSection />
 
+      {/* NUMERALIA */}
+      <Numeralia />
+      
       {/* VENTAJAS */}
       <Ventajas />
 
@@ -23,8 +26,6 @@ export default function Page() {
       {/* OBJETIVO */}
       <Objetivo />
 
-      {/* NUMERALIA */}
-      <Numeralia />
 
       {/* GOOGLE MAPS */}
       <Map />

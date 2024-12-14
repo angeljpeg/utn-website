@@ -9,7 +9,7 @@ export function Objetivo() {
         style={{ backgroundImage: `url(/fondo-utn-2.webp)` }}
       >
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-emerald-900/80 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-emerald-900/70 to-emerald-950/40"></div>
 
         {/* Content */}
         <div className="relative z-10 flex flex-col items-center justify-center px-4 sm:px-10">

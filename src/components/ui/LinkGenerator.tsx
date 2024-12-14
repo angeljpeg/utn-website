@@ -8,7 +8,7 @@ interface Props {
   pdf?: string;
 }
 
-export default function LinkGenerator({ title, className, link, pdf }: Props) {
+export function LinkGenerator({ title, className, link, pdf }: Props) {
   if (link) {
     return (
       <Link className={className} href={link}>

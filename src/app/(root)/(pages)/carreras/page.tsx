@@ -12,7 +12,9 @@ export default function Carreras() {
 
   return (
     <section className="w-full">
-     <NuevoModelo />
+      <section className="px-20">
+        <NuevoModelo />
+      </section>
     </section>
   );
 }

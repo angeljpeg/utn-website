@@ -5,7 +5,7 @@ export function HeroSection() {
   return (
     <>
       <div className="h-full absolute -z-10 bg-gradient-to-b to-white from-gray-200" />
-      <div className="relative text-4xl sm:text-5xl lg:rounded-bl-[18rem] md:text-6xl lg:text-7xl bg-fixed font-extrabold bg-[url(/fondo-utn.webp)] bg-center bg-cover min-h-[70vh] flex flex-col md:flex-row justify-between items-center p-8 md:pl-36 shadow-2xl shadow-gray-400">
+      <div className="relative text-4xl sm:text-5xl md:text-6xl lg:text-7xl bg-fixed font-extrabold bg-[url(/fondo-utn.webp)] bg-center bg-cover min-h-[70vh] flex flex-col md:flex-row justify-between items-center p-8 md:pl-36 shadow-2xl shadow-gray-400">
         <div className="max-w-full md:max-w-3xl flex flex-col gap-y-6 sm:gap-y-8 text-center md:text-left pt-14 relative z-10">
           <h1 className="text-white leading-snug sm:leading-tight text-balance text-shadow-lg">
             Tu futuro comienza en <span className="text-home-title">UTN</span>

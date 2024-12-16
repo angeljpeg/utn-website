@@ -6,6 +6,7 @@ import {
   Map,
   Noticias,
   Footer,
+  Services
 } from "@/components/root/HomePage";
 
 export default function Page() {
@@ -16,16 +17,18 @@ export default function Page() {
 
       {/* NUMERALIA */}
       <Numeralia />
-      
+
       {/* VENTAJAS */}
       <Ventajas />
 
       {/* NOTICIAS */}
       <Noticias />
 
+      {/* SERVICIOS */}
+      <Services />
+
       {/* OBJETIVO */}
       <Objetivo />
-
 
       {/* GOOGLE MAPS */}
       <Map />

@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 import { UseHeader } from "@/lib/stores/header";
 import Image from "next/image";
-import { HeaderPage } from "@/components/root/pages/Header";
+import { HeaderPage } from "@/components/root/components/Header";
 
 export default function EduContinua() {
   const setHeader = UseHeader((state) => state.setHeader);
@@ -14,7 +14,7 @@ export default function EduContinua() {
   return (
     <section className="w-full">
       <main className="min-h-screen">
-        <div className="flex justify-center w-full mb-12 h-fit">
+        <div className="flex justify-center w-full mb-12t">
           <div className="w-full px-4 lg:w-3/4 md:w-11/12">
             <HeaderPage
               title="Educación continua y Servicios Tecnológicos"

@@ -38,7 +38,7 @@ export function Services() {
               </p>
               {/* Botón */}
               <Link
-                href="/emprendedores"
+                href={service.link}
                 className="mt-4 text-green-600 font-medium text-sm hover:text-green-800 transition duration-150"
               >
                 Leer más...

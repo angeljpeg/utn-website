@@ -8,10 +8,10 @@ interface props {
 export function HeaderPage({title, subtitle} : props) {
   return (
     <>
-      <h2 className="mb-2 text-base text-center lg:text-xl md:text-lg text-neutral-500">
+      <h2 className="mb-2 text-center text-sm text-neutral-500 tracking-wider font-light">
         {subtitle}
       </h2>
-      <h3 className="mb-10 text-2xl font-medium text-center lg:text-4xl md:text-3xl text-neutral-900">
+      <h3 className="mb-10 font-medium text-center lg:text-4xl text-3xl text-neutral-900">
         {title}
       </h3>
     </>

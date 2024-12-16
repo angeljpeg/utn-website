@@ -1,5 +1,6 @@
-import { Aperture } from "lucide-react";
 import React from "react";
+import { razones } from "@/data/Ventajas";
+import { Icon } from "@/components/ui/DynamicIcon";
 
 export function Ventajas() {
   return (
@@ -16,7 +17,7 @@ export function Ventajas() {
 
         {/* Tarjetas */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl py-5">
-          {Array.from({ length: 5 }).map((_, index) => (
+          {razones.map((item, index) => (
             <div
               key={index}
               className="bg-white rounded-lg p-6 shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300"
@@ -24,18 +25,15 @@ export function Ventajas() {
               {/* Ícono y Título */}
               <div className="flex items-center gap-4 mb-4">
                 <div className="bg-gradient-to-r from-emerald-500 to-green-500 p-3 rounded-full text-white">
-                  <Aperture size={36} />
+                  <Icon name={item.icon} />
                 </div>
                 <h4 className="font-bold text-xl sm:text-2xl text-gray-800">
-                  Título {index + 1}
+                  {item.title}
                 </h4>
               </div>
               {/* Descripción */}
               <p className="text-start text-gray-600 leading-relaxed">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
-                totam voluptates! Corrupti qui veritatis explicabo atque quo
-                quae ab voluptatum quos enim ex. Voluptates blanditiis omnis,
-                ipsa nihil modi repellat!
+                {item.description}
               </p>
             </div>
           ))}

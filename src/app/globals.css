@@ -2,6 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .box-border-animated {
+  }
+}
+
+::selection {
+  @apply bg-green-200 text-green-600;
+}
+
+.radial-gradient {
+  background: radial-gradient(
+      circle at 50% 0%,
+      rgba(21, 128, 61, 0.05) 0%,
+      transparent 60%
+    ),
+    rgba(15, 15, 15, 1);
+}
+
+.linear-mask {
+  mask-image: linea-gradient(-75deg, white 20%, transparent 30%, white 100%);
+  -webkit-mask-image: linea-gradient(
+    -75deg,
+    white 20%,
+    transparent 30%,
+    white 100%
+  );
+}
+
 .text-home-title {
   /* TEXT */
   @apply bg-clip-text text-transparent;
@@ -14,8 +42,4 @@
 
   /* ANIMATION */
   @apply animate-animated-gradient;
-}
-
-::selection {
-  @apply bg-green-200 text-green-600;
 }

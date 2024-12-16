@@ -24,7 +24,7 @@ export function HeroSection() {
             conocimientos que te llevarán a alcanzar el éxito.
           </span>
           <div className="flex flex-col sm:flex-row gap-4 items-center justify-center text-white mt-6">
-            <Link href={"/carreras"} className="flex items-center justify-center gap-3 text-sm sm:text-base py-3 sm:py-4 px-6 sm:px-8 bg-green-500 rounded-full hover:bg-green-600 transition duration-300 shadow-lg hover:shadow-xl">
+            <Link href={"/carreras"} className="flex items-center justify-center gap-3 text-sm sm:text-base py-3 sm:py-4 px-6 sm:px-8 bg-green-500 rounded-full hover:bg-green-600 transition duration-300 shadow-lg hover:shadow-xl tracking-wider">
               Oferta Educativa
               <ArrowRight />
             </Link>

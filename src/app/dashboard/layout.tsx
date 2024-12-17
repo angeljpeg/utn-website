@@ -1,7 +1,9 @@
+import {NavbarDashboard} from '@/components/dashboard/NavbarDashboard'
+
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <div>Navbar dashboard</div>
+      <NavbarDashboard isOpen={true} />
       <main>{children}</main>
       <div>footer dashboard</div>
     </>

@@ -8,7 +8,7 @@ export default function Page() {
   const setHeader = UseHeader((state) => state.setHeader);
 
   useEffect(() => {
-    setHeader("Emprendedores", "/OfertaEducativa.webp");
+    setHeader("Emprendedores", 'https://res.cloudinary.com/dlfckf5zp/image/upload/v1734637658/carreras/torres_banner.jpg');
   }, [setHeader]);
   return (
     <section className="w-full">

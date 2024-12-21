@@ -1,26 +1,19 @@
 import dynamicIconImports from 'lucide-react/dynamicIconImports';
 
-
 export type carreras = {
     id: string
+    title: string
     isNewModel: boolean
     icon: keyof typeof dynamicIconImports
-    title: string
     carreras: {ing: ing[], tsu: tsu[]}
-}
-
-export type degrees = {
-    ing: string
-    tsu: string
 }
 
 export type ing = {
     id: number
-    area: string | undefined
-    competencias: competencias | undefined
     title: string
     type: "ing"
     cuatrimestres: cuatrimestre[]
+    competencias?: competencias
 }
 
 export type tsu = {
@@ -29,11 +22,12 @@ export type tsu = {
     title: string
     slug: string
     banner: string
-    pdf: string | undefined
-    area: string | undefined
+    pdf?: string
+    area?: string
     type: "tsu" | "lic"
-    competencias: competencias | undefined
     cuatrimestres: cuatrimestre[]
+    camposDeAccion?: string[]
+    competencias?: competencias
 }
 
 export type cuatrimestre = {
@@ -42,8 +36,35 @@ export type cuatrimestre = {
     materias: string[]
 }
 
-
 export type competencias = {
     img: string
     competencias: string[]
+}
+
+export type degrees = {
+    ing: string
+    tsu: string
+}
+
+export function findTsuBySlug(carreras: carreras[], slug: string): tsu | undefined {
+    for (const carrera of carreras) {
+        for (const tsu of carrera.carreras.tsu) {
+            if (tsu.slug === slug) {
+                return tsu;
+            }
+        }
+    }
+    return undefined;
+}
+
+export function findIngById(carreras: carreras[], id: number): ing | undefined {
+    for (const carrera of carreras) {
+        for (const ing of carrera.carreras.ing) {
+            if (ing.id === id){
+                return ing;
+            }
+        }
+    }
+
+    return undefined;
 }

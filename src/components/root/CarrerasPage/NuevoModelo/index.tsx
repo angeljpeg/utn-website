@@ -53,7 +53,7 @@ export default function NuevoModelo() {
                       Area:{" "}
                       <LinkGenerator
                         title={carrera.title}
-                        link={`/carreras/${carrera.slug}?q=hola`}
+                        link={`/carreras/${carrera.slug}`}
                         className="text-green-600 hover:text-green-700 duration-150"
                       />
                     </li>

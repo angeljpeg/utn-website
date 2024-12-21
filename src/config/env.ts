@@ -1,4 +1,6 @@
 export const env = {
+  /* GENERAL */
+  API_URL: process.env.API_URL,
   /* GOOGLE */
   GOOGLE_CLIENT_ID: process.env.GOOGLE_CLIENT_ID,
   GOOGLE_SECRET_ID: process.env.GOOGLE_SECRET_ID,
